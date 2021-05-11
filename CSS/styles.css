@@ -1,0 +1,327 @@
+@font-face {
+    src: url("../font/Rustico.ttf");
+    font-family: "Rustico";
+}
+
+/* fontawesome icon styling */
+
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+i {
+    color: white;
+}
+
+a {
+    color: rgba(255, 255, 255, .5);
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.aantal {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aantalResult {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+}
+
+.deadline {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+.deadlineResult {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    opacity: 0.9;
+}
+
+.navbar-collapse {
+    background: #343a40!important;
+}
+
+.nav-link {
+    src: url("../font/Meiryo_Bold.ttf");
+    font-family: "Meiryo";
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: translateY(-5px);
+}
+
+#anker_logo {
+    transition: 0.3s;
+}
+
+#anker_logo:hover {
+    transform: scale(1.1);
+}
+
+/* Header Image */
+
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/hetanker_background2.0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text over the header image */
+
+.header-text {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 3px 3px 4px #000000;
+    font-family: "Rustico";
+    font-size: 150px;
+}
+
+/* Darkmode */
+
+body {
+    height: 100vh !important;
+    background-color: white;
+    transition: background 0.3s linear;
+}
+
+body.dark {
+    background-color: #1e282d;
+    color: #0069d9;
+    transition: background 0.2s linear;
+}
+
+.header-text.dark {
+    color: #0069d9;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    position: relative;
+    height: 22px;
+    width: 46px;
+    transform: scale(1.2);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 18px;
+    width: 18px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+span {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+}
+
+span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.mb-4 {
+    margin-bottom: 0px !important;
+}
+
+hr {
+    background-color: #0069d9;
+}
+
+small {
+    font-size: 20px;
+}
+
+.active {
+    color: white;
+}
+
+/* Sign up option in the navbar */
+
+.account-text {
+    src: url("../font/Meiryo_Bold.ttf");
+    font-family: "Meiryo";
+    transition: all .2s ease-in-out;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.account-text:hover {
+    color: white
+}
+
+.account-img {
+    margin-left: 5px;
+}
+
+.form-control {
+    resize: none;
+}
+
+#login-row {
+    padding-top: 250px;
+}
+
+#fade-button {
+    height: 40px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(9, 28, 121, 1) 0%, rgba(2, 167, 219, 1) 44%, rgba(0, 185, 255, 1) 100%);
+    src: url("../font/Meiryo_Bold.ttf");
+    font-family: "Meiryo";
+    font-weight: 500;
+    border: none !important;
+    border-radius: 50px;
+    box-shadow: 0px 5px 12px blue;
+    transition: 0.3s;
+}
+
+#fade-button:hover {
+    box-shadow: 1px 5px 15px blue;
+    transform: scale(1.1);
+}
+
+.login-text {
+    src: url("../font/Meiryo_Bold.ttf");
+    font-family: "Meiryo";
+    font-size: 1.75rem;
+    background: cyan;
+}
+
+/* Error Page 404 */
+
+#body-error {
+    width: 100% !important;
+    height: 500px !important;
+    display: block !important;
+}
+
+#error {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 100px;
+    font-family: "Rustico";
+    color: red;
+    font-size: 100px;
+}
+
+/* Error Validation */
+
+.errorMessage {
+    color: red;
+}
+
+/* Toggle Login */
+
+#logoutButton {
+    display: none;
+}
+
+/* Styling for contact page */
+
+.blue-fade-bg {
+    height: 100vh;
+    background: linear-gradient(to right, #363795, #005C97);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.middle-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-text-styling {
+    color: white;
+    font-weight: 600;
+}
+
+.padding-contact {
+    padding-top: 10px;
+}
+
+.padding-inschrijving {
+    padding-top: 200px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:768px) {
+    .header-text {
+        top: 50%;
+        position: absolute;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 3px 3px 4px #000000;
+        font-family: "Rustico";
+        font-size: 50px;
+    }
+}
