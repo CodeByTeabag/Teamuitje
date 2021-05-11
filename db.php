@@ -1,7 +1,7 @@
 <?php
-$servername = "127.0.0.1";
-$username = "davydebr_id_rsa";
-$password = "J!Q!M,yR?-s8";
+$servername = "localhost";
+$username = "root";
+$password = "";
 
 
 try {
