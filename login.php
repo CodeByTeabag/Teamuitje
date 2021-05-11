@@ -1,6 +1,6 @@
 <?php
-require_once('db.php');
-require_once('page-layout/header.php');
+include('db.php');
+include('page-layout/header.php');
 
 $error = [];
 
